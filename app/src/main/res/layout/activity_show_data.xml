@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_drawable"
+        tools:context=".LoginActivity">
+
+        <LinearLayout
+            android:id="@+id/ngobrolKuyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngobrol"
+                android:textSize="16pt"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Kuy"
+                android:textSize="16pt"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textStyle="bold"
+                android:textColor="@color/pink"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/settings_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_more_vert_24"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="10dp"/>
+        
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/ngobrolKuyTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@id/settings_btn"
+                android:layout_marginTop="32dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="32dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:src="@drawable/profile_placeholder"
+                        android:layout_marginEnd="5dp" >
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/kolom1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/user1"
+                            android:layout_width="97dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="left"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:text="Agus"
+                            android:textColor="@color/white"
+                            android:textSize="10pt"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="18.30"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Pesan ...."
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toBottomOf="@id/user1"
+                            app:layout_constraintStart_toStartOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="32dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:src="@drawable/profile_placeholder"
+                        android:layout_marginEnd="5dp" >
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/user2"
+                            android:layout_width="97dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="left"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:text="Agus"
+                            android:textColor="@color/white"
+                            android:textSize="10pt"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="18.30"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Pesan ...."
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toBottomOf="@id/user2"
+                            app:layout_constraintStart_toStartOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="32dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:src="@drawable/profile_placeholder"
+                        android:layout_marginEnd="5dp" >
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/user3"
+                            android:layout_width="97dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="left"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:text="Agus"
+                            android:textColor="@color/white"
+                            android:textSize="10pt"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="18.30"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Pesan ...."
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toBottomOf="@id/user3"
+                            app:layout_constraintStart_toStartOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="32dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:src="@drawable/profile_placeholder"
+                        android:layout_marginEnd="5dp" >
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/user4"
+                            android:layout_width="97dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="left"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:text="Agus"
+                            android:textColor="@color/white"
+                            android:textSize="10pt"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="18.30"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Pesan ...."
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toBottomOf="@id/user4"
+                            app:layout_constraintStart_toStartOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="32dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:src="@drawable/profile_placeholder"
+                        android:layout_marginEnd="5dp" >
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/user5"
+                            android:layout_width="97dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="left"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:text="Agus"
+                            android:textColor="@color/white"
+                            android:textSize="10pt"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="18.30"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Pesan ...."
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toBottomOf="@id/user5"
+                            app:layout_constraintStart_toStartOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="32dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:src="@drawable/profile_placeholder"
+                        android:layout_marginEnd="5dp" >
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/user6"
+                            android:layout_width="97dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="left"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:text="Agus"
+                            android:textColor="@color/white"
+                            android:textSize="10pt"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="18.30"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Pesan ...."
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toBottomOf="@id/user6"
+                            app:layout_constraintStart_toStartOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="32dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:src="@drawable/profile_placeholder"
+                        android:layout_marginEnd="5dp" >
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/user7"
+                            android:layout_width="97dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="left"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:text="Agus"
+                            android:textColor="@color/white"
+                            android:textSize="10pt"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="18.30"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Pesan ...."
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toBottomOf="@id/user7"
+                            app:layout_constraintStart_toStartOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="32dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:src="@drawable/profile_placeholder"
+                        android:layout_marginEnd="5dp" >
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/user8"
+                            android:layout_width="97dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="left"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:text="Agus"
+                            android:textColor="@color/white"
+                            android:textSize="10pt"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="18.30"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Pesan ...."
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toBottomOf="@id/user8"
+                            app:layout_constraintStart_toStartOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="32dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:src="@drawable/profile_placeholder"
+                        android:layout_marginEnd="5dp" >
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/user9"
+                            android:layout_width="97dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="left"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:text="Agus"
+                            android:textColor="@color/white"
+                            android:textSize="10pt"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="18.30"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Pesan ...."
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toBottomOf="@id/user9"
+                            app:layout_constraintStart_toStartOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="32dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:src="@drawable/profile_placeholder"
+                        android:layout_marginEnd="5dp" >
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/user10"
+                            android:layout_width="97dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="left"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:text="Agus"
+                            android:textColor="@color/white"
+                            android:textSize="10pt"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="18.30"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Pesan ...."
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toBottomOf="@id/user10"
+                            app:layout_constraintStart_toStartOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="32dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:src="@drawable/profile_placeholder"
+                        android:layout_marginEnd="5dp" >
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/user11"
+                            android:layout_width="97dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="left"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:text="Agus"
+                            android:textColor="@color/white"
+                            android:textSize="10pt"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="18.30"
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Pesan ...."
+                            android:fontFamily="@font/redhatdisplay_regular"
+                            android:textColor="@color/white"
+                            android:textSize="5pt"
+                            app:layout_constraintTop_toBottomOf="@id/user11"
+                            app:layout_constraintStart_toStartOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
